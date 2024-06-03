@@ -80,6 +80,7 @@ const Block = styled.div`
     flex-direction: column;
   }
 `;
+
 const BlockImg = styled.div`
   display: flex;
   justify-content: center;
@@ -106,6 +107,7 @@ const BlockImg = styled.div`
     height: 515px;
   }
 `;
+
 const Img = styled.div`
   background-image: url(${aboutMe});
   width: 330px;
@@ -179,6 +181,7 @@ const ItemWhite = styled.p`
 `;
 
 const AdditionalInformation = styled.div``;
+
 const DescriptionAdditional = styled.p`
   color: rgb(44, 73, 77);
   font-family: cursive;
@@ -190,6 +193,7 @@ const DescriptionAdditional = styled.p`
     font-size: 17px;
   }
 `;
+
 const Author = styled.h3`
   color: rgb(44, 73, 77);
   font-family: cursive;

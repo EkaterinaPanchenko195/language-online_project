@@ -36,7 +36,7 @@ const Teacher = () => {
   );
 
   useEffect(() => {
-    dispatch(fetchOurTeamData()); // вызываем вместо actions/reduser  функцию с асинхроном
+    dispatch(fetchOurTeamData());
   }, []);
 
   return (

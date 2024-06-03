@@ -178,4 +178,5 @@ const BlockButton = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 const BlockLeft = styled.div``;

@@ -225,16 +225,6 @@ const Radio = styled.input`
   margin-right: 10px;
 `;
 
-const Select = styled.select`
-  border: none;
-  border-bottom: 1px solid #d6d6d6;
-  width: 100%;
-  padding-bottom: 20px;
-  margin-bottom: 45px;
-  outline: none;
-  color: #2d4a4e;
-`;
-
 const Button = styled.button`
   background-color: #2d4a4e;
   border: none;

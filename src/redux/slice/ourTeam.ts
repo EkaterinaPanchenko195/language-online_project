@@ -1,11 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchOurTeamData = createAsyncThunk(
-  // получаем api
   "OurTeamData/fetchOurTeamData",
   async (_, { rejectWithValue }) => {
     try {
-      // попытаться сделать, то, что находится внутри try иначе catch
       const response = await fetch(
         "http://language-online-crm.com:18920/0/ServiceModel/LoTildaWebhookService.svc/GetTeacherList",
         {
@@ -39,13 +37,11 @@ const defoltOurTeamData = createSlice({
   extraReducers: (builder) => {
     return (
       builder.addCase(fetchOurTeamData.pending, (state: any) => {
-        // pending - в ожидании
         state.status = "loading";
         state.error = null;
       }),
       builder.addCase(
         fetchOurTeamData.fulfilled,
-        // fulfilled - выполнено
         (state: any, { payload }: { payload: any }) => {
           state.status = "resolved";
           state.data = payload.GetTeacherListResult;
@@ -53,7 +49,6 @@ const defoltOurTeamData = createSlice({
       ),
       builder.addCase(
         fetchOurTeamData.rejected,
-        // rejected -  отклоненный
         (state: any, { payload }: { payload: any }) => {
           state.status = "resolved";
           state.data = payload;

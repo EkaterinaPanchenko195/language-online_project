@@ -13,7 +13,6 @@ const Block = styled.h2`
   padding: 10px;
   border-radius: 50px;
   font-family: "Rubik", sans-serif;
-  /* background-color: aliceblue; */
   color: #2d4a4e;
   @media (max-width: 1295px) {
     font-size: 22px;

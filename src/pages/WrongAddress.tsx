@@ -15,6 +15,7 @@ const Container = styled.div`
   align-items: center;
   height: 70vh;
 `;
+
 const Title = styled.div`
   font-family: "Rubik", sans-serif;
   color: #2c494d;

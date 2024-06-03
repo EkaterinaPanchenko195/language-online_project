@@ -86,7 +86,6 @@ const ContainerTitle = styled.h2`
   margin-bottom: 120px;
   transform: rotate(3deg);
 
-  /* transform: rotate(4deg); */
   @media (max-width: 900px) {
     font-size: 45px;
     margin-bottom: 65px;

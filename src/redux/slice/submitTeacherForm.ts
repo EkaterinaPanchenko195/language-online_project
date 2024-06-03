@@ -1,11 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchTeacherForm: any = createAsyncThunk(
-  // получаем api
   "teacherForm/fetchTeacherForm",
   async (formMainData, { rejectWithValue }) => {
     try {
-      // попытаться сделать, то, что находится внутри try иначе catch
       const response = await fetch(
         "http://language-online-crm.com:18920/0/ServiceModel/LoTildaWebhookService.svc/CreateLead",
         {
@@ -47,13 +45,11 @@ const submitTeacherForm = createSlice({
   extraReducers: (builder) => {
     return (
       builder.addCase(fetchTeacherForm.pending, (state: any) => {
-        // pending - в ожидании
         state.status = "loading";
         state.error = null;
       }),
       builder.addCase(
         fetchTeacherForm.fulfilled,
-        // fulfilled - выполнено
         (state: any, { payload }: { payload: any }) => {
           state.status = "resolved";
           state.data = payload;
@@ -61,7 +57,6 @@ const submitTeacherForm = createSlice({
       ),
       builder.addCase(
         fetchTeacherForm.rejected,
-        // rejected -  отклоненный
         (state: any, { payload }: { payload: any }) => {
           state.status = "resolved";
           state.data = payload;
