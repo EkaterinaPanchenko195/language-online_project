@@ -84,13 +84,14 @@ const Container = styled.section`
 
 const BlockPrice = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
   width: 80%;
   gap: 3%;
   row-gap: 65px;
   @media (max-width: 1140px) {
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
   }

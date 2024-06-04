@@ -53,9 +53,7 @@ const Container = styled.section`
   align-items: center;
   flex-direction: column;
   padding-top: 80px;
-  @media (max-width: 1480px) {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 30px;
 `;
 const Section = styled.div`
   display: flex;
@@ -67,7 +65,6 @@ const Section = styled.div`
     flex-direction: column;
   }
   @media (max-width: 875px) {
-    flex-direction: column;
     align-items: center;
   }
 `;
@@ -176,8 +173,7 @@ const ItemWhite = styled.p`
   border-radius: 15px;
   box-shadow: -29px 24px 54px -21px rgba(0, 0, 0, 0.75);
   width: 100%;
-  @media (max-width: 820px) {
-  }
+
 `;
 
 const AdditionalInformation = styled.div``;
